@@ -2,7 +2,9 @@
 models/
 
 # 数据集
-data/
+data/MNIST/
+# 保留自定义数据集
+data/custom/
 
 # 日志文件
 logs/
