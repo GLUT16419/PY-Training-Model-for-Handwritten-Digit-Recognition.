@@ -1,0 +1,26 @@
+# 项目依赖包
+# 深度学习框架
+torch>=2.0.0
+torchvision>=0.15.0
+
+# 数据处理
+numpy>=1.24.0
+pandas>=2.0.0
+
+# 可视化
+matplotlib>=3.7.0
+
+# 工具
+tqdm>=4.65.0
+pillow>=9.5.0
+
+# 模型导出
+onnx>=1.14.0
+onnxruntime>=1.14.0
+
+# 配置管理
+python-dotenv>=1.0.0
+
+# GUI和图像处理
+PyQt5>=5.15.0
+opencv-python>=4.8.0

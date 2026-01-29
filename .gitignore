@@ -1,0 +1,53 @@
+﻿# 模型文件
+models/
+
+# 数据集
+data/
+
+# 日志文件
+logs/
+
+# 报告文件
+reports/
+
+# 个人信息和课程论文
+新课程论文.md
+桂林喀斯特地区植被覆盖度深度学习反演研究.md
+课程论文.md
+model_diagnostic_report.txt
+test_report_*.txt
+
+# 临时文件和缓存目录
+.trae/
+2be96-main/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 环境文件
+.env
+
+# IDE和编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统文件
+Thumbs.db
+.DS_Store
+
+# 构建文件
+build/
+dist/
+*.egg-info/
+
+# 测试文件
+pytest_cache/
+
+# 其他临时文件
+*.tmp
+*.temp
+*.log
