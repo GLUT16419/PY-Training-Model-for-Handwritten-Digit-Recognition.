@@ -1,4 +1,4 @@
-# STM32 MNIST手写数字识别项目
+﻿# STM32 MNIST手写数字识别项目
 
 本项目实现了一个基于PyTorch的轻量级MNIST手写数字识别模型，专为STM32F407微控制器部署而设计。
 
@@ -43,6 +43,24 @@ PYAI/
 - Python 3.8+
 - PyTorch 2.0+
 - CUDA 11.7+ (可选，用于GPU加速)
+
+## 数据集说明
+
+本项目支持两种方式获取MNIST数据集：
+
+1. **自动下载**：运行训练脚本时，项目会自动检查本地是否存在MNIST数据集。如果不存在，会自动从PyTorch官方源下载。
+
+2. **手动下载**：如果自动下载失败，可以手动运行以下命令下载MNIST数据集：
+
+   ```bash
+   # 下载官方MNIST数据集
+   python scripts/download_official_mnist.py
+   
+   # 或者使用备用下载脚本
+   python scripts/download_mnist.py
+   ```
+
+3. **自定义数据集**：项目已经包含了自定义手写数字数据集，位于 `data/custom` 目录下，可以与MNIST数据集混合使用。
 
 ## 安装依赖
 

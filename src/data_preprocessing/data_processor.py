@@ -1,4 +1,4 @@
-import os
+﻿import os
 import numpy as np
 import random
 import torch
@@ -355,14 +355,14 @@ class MNISTDataProcessor:
         train_dataset = datasets.MNIST(
             root=self.data_dir,
             train=True,
-            download=False,  # 不下载，使用本地数据
+            download=True,  # 自动下载数据集
             transform=self.transform
         )
         
         test_dataset = datasets.MNIST(
             root=self.data_dir,
             train=False,
-            download=False,  # 不下载，使用本地数据
+            download=True,  # 自动下载数据集
             transform=self.test_transform
         )
         
@@ -463,14 +463,14 @@ class MNISTDataProcessor:
         mnist_train = datasets.MNIST(
             root=self.data_dir,
             train=True,
-            download=False,
+            download=True,  # 自动下载数据集
             transform=self.transform
         )
         
         mnist_test = datasets.MNIST(
             root=self.data_dir,
             train=False,
-            download=False,
+            download=True,  # 自动下载数据集
             transform=self.test_transform
         )
         
