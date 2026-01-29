@@ -60,7 +60,14 @@ PYAI/
    python scripts/download_mnist.py
    ```
 
-3. **自定义数据集**：项目已经包含了自定义手写数字数据集，位于 `data/custom` 目录下，可以与MNIST数据集混合使用。
+3. **自定义数据集**：项目提供了自定义手写数字数据集的压缩包 `data/custom/unified_dataset.zip`，使用方法：
+   
+   ```bash
+   # 解压自定义数据集
+   Expand-Archive -Path "data/custom/unified_dataset.zip" -DestinationPath "data/custom/" -Force
+   ```
+   
+   解压后，自定义数据集会位于 `data/custom/unified_dataset` 目录下，可以与MNIST数据集混合使用。
 
 ## 安装依赖
 
